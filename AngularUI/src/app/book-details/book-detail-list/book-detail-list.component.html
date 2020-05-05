@@ -1,0 +1,27 @@
+<div class="input-group">
+    <div class="input-group-prepend">
+        <div class="input-group-text bg-white">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+
+    <input #Search (keyup)="onKey(Search.value)" class="form-control" placeholder="Search">
+</div>
+
+<table class="table table-hover">
+    <tr>
+        <th>Book Name</th>
+        <th>Author</th>
+    </tr>
+    
+
+    <!--TODO: Clean up this block!!!!!-->
+    <tr *ngFor="let book of service.list">
+        <td *ngIf="!Search.value || (book.BookName.toLowerCase().match(Search.value) || book.Author.toLowerCase().match(Search.value))" (click)="populateForm(book)">{{book.BookName}}</td>
+        <td *ngIf="!Search.value || (book.BookName.toLowerCase().match(Search.value) || book.Author.toLowerCase().match(Search.value))" (click)="populateForm(book)">{{book.Author}}</td>
+        <td *ngIf="!Search.value || (book.BookName.toLowerCase().match(Search.value) || book.Author.toLowerCase().match(Search.value))">
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(book.BKID)"></i>
+        </td>
+    </tr>
+</table>
+

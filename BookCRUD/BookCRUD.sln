@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCRUD", "BookCRUD.csproj", "{DF9C97A5-065C-409C-9BAE-8CF0B434A744}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF9C97A5-065C-409C-9BAE-8CF0B434A744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9C97A5-065C-409C-9BAE-8CF0B434A744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9C97A5-065C-409C-9BAE-8CF0B434A744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9C97A5-065C-409C-9BAE-8CF0B434A744}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
